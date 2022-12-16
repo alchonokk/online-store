@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  background-image: url(../../assets/LOGO.svg);
+  background-size: cover;
+  width: 7rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket {
+  display: block;
+  position: relative;
+  background-image: url(../../assets/bag2.svg);
+  background-size: contain;
+  width: 7rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-cart-total,
+.amount-money {
+  font-size: 1.6rem; 
+}
+
+@media (max-width: 640px) {
+  .header-cart-total,
+  .amount-money {
+    font-size: 1rem; 
+  }
+
+  .logo {
+    width: 5rem;
+    height: 3rem;
+  }
+
+}
+
+.amount-goods {
+  display: inline-block;
+  background-color: #E6C49F;
+  text-align: center;
+  margin-top: 24px;
+  margin-left: 40px;
+  border-radius: 50%;
+  line-height: 2rem;
+  min-width: 2rem;
+  color: black;
+}
