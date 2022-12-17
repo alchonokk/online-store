@@ -1,7 +1,11 @@
 import React from "react";
+import FooterApp from "./components/FooterApp/FooterApp";
 
 function App() {
-  return <div>Work</div>;
+  return(
+
+    <FooterApp/>
+  )
 }
 
 export default App;
