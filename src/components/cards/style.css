@@ -1,0 +1,88 @@
+.cards-box {
+  width: 90vw;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+
+.card {
+  width: 16.25rem;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card img {
+  width: 16.25rem ;
+  height: 16.25rem ;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-information {
+  background-color: rgba(243, 224, 202, 0.8);
+  border-radius: 0px 0px 10px 10px;
+  width: 16.25rem;
+  height: 6.25rem;
+}
+
+.card-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+  line-height: 30px;
+  padding-left: 1rem;
+}
+
+.card-category {
+  font-size: 18px;
+  margin: 0;
+  line-height: 30px;
+  padding-left: 1rem;
+}
+
+.card-detail {
+  padding-left: 1rem;
+}
+
+.add-to-cart {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 16rem;
+  height: 40px;
+  background: rgba(243, 224, 202, 0.8);
+  border: 2px solid rgba(187, 145, 105, 0.8);
+  border-radius: 6px;
+}
+
+.counter {
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background: transparent;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  font-size: 8px;
+  padding: 0;
+}
+
+.counter-box {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.number-products {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.add-to-cart-title {
+  margin-left: 1rem;
+}
