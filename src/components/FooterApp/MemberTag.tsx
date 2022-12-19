@@ -3,12 +3,10 @@ import { getMemberGitHubLink } from "../../enumerations/Team";
 
 function MemberTag({ gitHubProfile, name }: TeamMember) {
   return (
-    <>
-      <a className="git-link" href={getMemberGitHubLink(gitHubProfile)} target="_blank">
+      <a className="git-link" key={gitHubProfile} href={getMemberGitHubLink(gitHubProfile)} target="_blank">
         <span className="git-logo"></span>
         <span className="user-name">{name}</span>
       </a>
-    </>
   );
 }
 
