@@ -1,7 +1,8 @@
 import createUrlForImage from "./CreateImageURL";
 import { Link } from 'react-router-dom';
-import { Count } from "./Count";
+import { AddtoCart } from "./AddToCart";
 import React from "react";
+import { useState } from "react";
 
 type CardType = {
   id: string;
@@ -15,17 +16,16 @@ type CardType = {
   images: string[],
 };
 
-const AddtoCart = (event: React.MouseEvent<HTMLElement>) => {
-  const target = event.target as HTMLElement;
-  if (target.className ==='add-to-cart-title' ) {
-    target.textContent = 'Added to card';
-  }
-  if ( target.className ==='add-to-cart') {
-    target.firstElementChild!.textContent = 'Added to card';
-  }
-}
-
 const CreateCard = ({ id, name, category, price, thumbnailNumber }: CardType) => {
+  const [num, setNum] = useState(1);
+
+  const CounterIncrement = () => {
+    setNum (num+1);   
+  }
+  const CounterDecrement = () => {
+    num === 1 ? setNum (1) : setNum (num-1);
+  }
+  
   return (
     <div className="card">
       <img src={createUrlForImage(thumbnailNumber)} alt="img picture" />
@@ -34,9 +34,13 @@ const CreateCard = ({ id, name, category, price, thumbnailNumber }: CardType) =>
         <h3 className="card-name">{name}</h3>
         <Link className="card-detail" to={`/product-details/${id}`}>More detailed</Link>
       </div>
-      <div className="add-to-cart" onClick={AddtoCart}>
+      <div className="add-to-cart" onClick={AddtoCart(num)}>
         <div className="add-to-cart-title">Add to card: {price}$</div> 
-        <div className="counter-box">{Count()}</div>
+        <div className="counter-box">
+          <button className="counter" onClick={CounterDecrement}>—</button>
+          <span className="number-products" >{num}</span>
+          <button className="counter" onClick={CounterIncrement}>+</button>
+        </div>
       </div>
     </div>
   );
