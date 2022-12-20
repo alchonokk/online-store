@@ -1,9 +1,9 @@
 import React from "react";
-import CreateCardsBox from "./components/cards/CreateCardsBox";
+import CardsBox from "./components/cards/CardsBox";
 
 function App() {
   // return <div>Work</div>;
-  return <CreateCardsBox/>;
+  return <CardsBox/>;
 }
 
 export default App;
