@@ -1,7 +1,8 @@
 import React from "react";
+import RoutesWrapper from "./components/RoutesWrapper/RoutesWrapper";
 
 function App() {
-  return <div>Work</div>;
+  return <RoutesWrapper />;
 }
 
 export default App;
