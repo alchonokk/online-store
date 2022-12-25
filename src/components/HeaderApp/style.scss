@@ -25,27 +25,13 @@
   background-position: center;
 }
 
-.header-cart-total,
-.amount-money {
-  font-size: 1.6rem; 
+.cart-total {
+  font-size: 1.6rem;
 }
 
-@media (max-width: 640px) {
-  .header-cart-total,
-  .amount-money {
-    font-size: 1rem; 
-  }
-
-  .logo {
-    width: 5rem;
-    height: 3rem;
-  }
-
-}
-
-.amount-goods {
+.basket_number-goods {
   display: inline-block;
-  background-color: #E6C49F;
+  background-color: #e6c49f;
   text-align: center;
   margin-top: 24px;
   margin-left: 40px;
@@ -53,4 +39,15 @@
   line-height: 2rem;
   min-width: 2rem;
   color: black;
+}
+
+@media (max-width: 640px) {
+  .cart-total {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 5rem;
+    height: 3rem;
+  }
 }
