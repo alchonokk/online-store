@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFCF5;
+  opacity: 0.8;
+  visibility: visible;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 1.5rem;
+  width: 30rem;
+  height: 35rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  opacity: 1;
+  background: #FFFCF5;
+  border: 2px solid rgba(187, 145, 105, 0.8);
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .modal__content {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  border: 2px solid #BB9169;
+  border-radius: 10px;
+  margin-top: 0.8rem;
+  padding: 5px;
+}
+
+.form__error {
+  margin: 0;
+  font-size: 0.6rem;
+  color: red;
+}
+
+.form__card_title {
+  margin-bottom: 0.3rem;
+}
+
+.form__card__payment-logo {
+  border: 2px solid #BB9169;
+  border-radius: 10px;
+  width: 60px;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form__card__payment {
+  align-items: center;
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+.visa {
+  background-image: url(../../assets/Visa.svg);
+  background-size: contain;
+}
+
+.master-card {
+  background-image: url(../../assets/masterCard.svg);
+}
+
+.union-pay {
+  background-image: url(../../assets/unionpay.svg);
+}

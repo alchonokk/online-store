@@ -1,7 +1,8 @@
 import React from "react";
+import ModalWindow from "./components/ModalWindow/ModalWindow";
 
 function App() {
-  return <div>Work</div>;
+  return <ModalWindow/>;
 }
 
 export default App;
