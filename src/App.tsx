@@ -1,13 +1,13 @@
 import React from "react";
 import HeaderApp from "./components/HeaderApp";
-import ModalWindow from "./components/ModalWindow/ModalWindow";
+import ModalWindow from "./components/ModalWindow";
 import "./style.css";
 
 function App() {
   return (
     <>
-      <HeaderApp />;
-      <ModalWindow />;
+      <HeaderApp />
+      <ModalWindow />
     </>
   );
 }

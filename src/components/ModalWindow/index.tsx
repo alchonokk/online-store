@@ -1,10 +1,10 @@
 import React from "react";
 import Modal from "./Modal";
-import showModal from "./showModal";
-import "./style.css";
+import ShowModal from "./showModal";
+import "./style.scss";
 
 function ModalWindow() {
-  const { isShowing, toggle } = showModal();
+  const { isShowing, toggle } = ShowModal();
 
   return (
     <>

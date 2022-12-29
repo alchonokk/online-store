@@ -7,17 +7,19 @@ export type IValueToModal = {
   hide: () => void;
 };
 
-const Modal = ({
-  isShowing,
-  hide,
-}: IValueToModal) =>
+const Modal = ({ isShowing, hide }: IValueToModal) =>
   isShowing
     ? ReactDOM.createPortal(
         <React.Fragment>
           <div className="modal" onClick={hide}>
-            <div className="modal__content" onClick={(e) => {e.stopPropagation();}}>
+            <div
+              className="modal__content"
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+            >
               <div>
-                <Form/>
+                <Form />
               </div>
             </div>
           </div>

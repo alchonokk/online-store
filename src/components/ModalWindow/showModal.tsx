@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-const showModal = () => {
+const ShowModal = () => {
+  //как назвать эту функцию?
   const [isShowing, setIsShowing] = useState(false);
 
   function toggle() {
@@ -13,4 +14,4 @@ const showModal = () => {
   };
 };
 
-export default showModal;
+export default ShowModal;
