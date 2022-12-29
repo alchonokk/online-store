@@ -1,11 +1,16 @@
 import React from "react";
-import FooterApp from "./components/FooterApp/FooterApp";
+import HeaderApp from "./components/HeaderApp";
+import FooterApp from "./components/FooterApp";
+
+import "./style.css";
 
 function App() {
-  return(
-
-    <FooterApp/>
-  )
+  return (
+    <>
+      <HeaderApp />
+      <FooterApp />
+    </>
+  );
 }
 
 export default App;
