@@ -18,8 +18,8 @@
 }
 
 .card img {
-  width: 16.25rem ;
-  height: 16.25rem ;
+  width: 16.25rem;
+  height: 16.25rem;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -56,9 +56,11 @@
   align-items: center;
   width: 16rem;
   height: 40px;
-  background: rgba(243, 224, 202, 0.8);
   border: 2px solid rgba(187, 145, 105, 0.8);
   border-radius: 6px;
+  &__active {
+    background: rgba(243, 224, 202, 0.8);
+  }
 }
 
 .counter {

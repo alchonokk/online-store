@@ -1,6 +1,6 @@
 import { data } from "./CartData";
 import { Card } from "./Card";
-import './style.css'
+import "./style.scss";
 
 function CardsBox() {
   return (
