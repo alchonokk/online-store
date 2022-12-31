@@ -16,11 +16,15 @@ const CLASSNAME_VISA_PAYSYSTEM = "form__card__payment-logo visa";
 const CLASSNAME_MASTER_CARD_PAYSYSTEM = "form__card__payment-logo master-card";
 const CLASSNAME_UNION_PAYSYSTEM = "form__card__payment-logo union-pay";
 
-function Form() {
+interface IhiddenForm {
+  hide: () => void;
+  setIsSubmit: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function Form({ hide, setIsSubmit }: IhiddenForm) {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm({ mode: "onBlur" });
 
@@ -54,12 +58,13 @@ function Form() {
   );
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    hide();
     console.log(data);
-    reset();
-    alert(
-      "Заказ оформлен. TODO// Затем, спустя 3-5 секунд происходит редирект на главную страницу магазина. Корзина при этом очищается"
-    );
-    //не получается закрыть модальное окно
+    setIsSubmit(true);
+    // alert(
+    //   "Заказ оформлен. TODO// Затем, спустя 3-5 секунд происходит редирект на главную страницу магазина.
+    //  Корзина при этом очищается"
+    // );
   };
 
   register("cardNumber", {

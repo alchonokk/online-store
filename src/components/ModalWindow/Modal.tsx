@@ -5,9 +5,10 @@ import Form from "./Form";
 export type IValueToModal = {
   isShowing: boolean;
   hide: () => void;
+  setIsSubmit: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Modal = ({ isShowing, hide }: IValueToModal) =>
+const Modal = ({ isShowing, hide, setIsSubmit }: IValueToModal) =>
   isShowing
     ? ReactDOM.createPortal(
         <React.Fragment>
@@ -19,7 +20,7 @@ const Modal = ({ isShowing, hide }: IValueToModal) =>
               }}
             >
               <div>
-                <Form />
+                <Form hide={hide} setIsSubmit={setIsSubmit} />
               </div>
             </div>
           </div>
