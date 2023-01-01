@@ -1,15 +1,14 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
+import HeaderApp from "../HeaderApp";
+import FooterApp from "../FooterApp";
 
 function LayoutApp() {
   return (
     <>
-      <h1>Header and Footer</h1>
+      <HeaderApp />
       <Outlet />
+      <FooterApp />
     </>
-    
-    // <HeaderApp />
-    //   <Outlet />
-    // <FooterApp />
   );
 }
 

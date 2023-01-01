@@ -1,6 +1,6 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from "react-router-dom";
 
-function DiscriptionPage() {
+function DetailedPage() {
   const { id } = useParams();
   return (
     <div>
@@ -9,4 +9,4 @@ function DiscriptionPage() {
   );
 }
 
-export default DiscriptionPage;
+export default DetailedPage;

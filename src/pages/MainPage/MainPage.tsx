@@ -1,10 +1,7 @@
+import CardsBox from "../../components/CardsBox";
 
 function MainPage() {
-  return (
-    <div>
-      <h1>MainPage</h1>
-    </div>
-  );
+  return <CardsBox />;
 }
 
 export default MainPage;
