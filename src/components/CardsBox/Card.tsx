@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import cx from "classnames";
 import createUrlForImage from "../../helpers/createUrlForImage";
 import CounterBox from "../Common/CounterBox";
+import { useAppDispatch } from "../../app/hooks";
+import {
+  addProduct,
+  changeProductAmount,
+  deleteProduct,
+} from "../../reducer/basketReducer/basketslice";
 
 import Links from "../../constants/Links";
 
@@ -18,24 +24,40 @@ type CardType = {
   images: string[];
 };
 
-const Card = ({ id, name, category, price, imgNumber }: CardType) => {
+const Card = ({ id, name, category, price, imgNumber, stock }: CardType) => {
   const [num, setNum] = useState(0);
   const [isAddToCard, setIsAddToCard] = useState(false);
+  const dispatch = useAppDispatch();
 
   const handleIncrement = (count: number) => {
-    setNum(count + 1);
+    if (count < Number(stock)) {
+      setNum(count + 1);
+      dispatch(
+        changeProductAmount({ id, amount: count + 1, price: Number(price) })
+      );
+    } else {
+      setNum(Number(stock));
+      dispatch(
+        changeProductAmount({ id, amount: Number(stock), price: Number(price) })
+      );
+    }
   };
 
   const handleDecrement = (count: number) => {
     count <= 1 ? setNum(0) : setNum(count - 1);
+    dispatch(
+      changeProductAmount({ id, amount: count - 1, price: Number(price) })
+    );
     if (count <= 1) {
       setIsAddToCard(!isAddToCard);
+      dispatch(deleteProduct(id));
     }
   };
 
-  const addedToCar = (num: number) => {
+  const addedToCart = (num: number) => {
     if (!isAddToCard) {
       setIsAddToCard(true);
+      dispatch(addProduct({ id, amount: num, price: Number(price) }));
       handleIncrement(num);
     }
   };
@@ -54,7 +76,7 @@ const Card = ({ id, name, category, price, imgNumber }: CardType) => {
           More detailed
         </Link>
       </div>
-      <div className={cl} onClick={() => addedToCar(num)}>
+      <div className={cl} onClick={() => addedToCart(num)}>
         <div className="add-to-cart-title">
           {!isAddToCard ? `Add to card: ${price}$` : "Added to card"}
         </div>

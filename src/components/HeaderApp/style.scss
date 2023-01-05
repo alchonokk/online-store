@@ -1,8 +1,10 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .logo {
@@ -28,6 +30,7 @@
 
 .cart-total {
   font-size: 1.6rem;
+  width: 20%;
 }
 
 .basket_number-goods {
