@@ -10,11 +10,15 @@ export interface IProduct {
 export interface IBasketState {
   basketProducts: IProduct[];
   productIndex: number;
+  isAdd: boolean;
+  isAddAmount: number;
 }
 
 const initialState: IBasketState = {
   basketProducts: [],
   productIndex: NaN,
+  isAdd: false,
+  isAddAmount: 0,
 };
 
 export const basketSlice = createSlice({
@@ -49,6 +53,20 @@ export const basketSlice = createSlice({
         (product) => product.id === action.payload
       );
     },
+    isAddtoBasket(state, action: PayloadAction<string>) {
+      const toggleProduct = state.basketProducts.find(
+        (product) => product.id === action.payload
+      );
+      if (toggleProduct) {
+        state.isAdd = true;
+        state.isAddAmount = toggleProduct.amount;
+      } else {
+        state.isAdd = false;
+      }
+    },
+    addtoBasketTrue(state, action: PayloadAction<boolean>) {
+      state.isAdd = action.payload;
+    },
   },
 });
 
@@ -57,5 +75,7 @@ export const {
   changeProductAmount,
   deleteProduct,
   findProductIndex,
+  isAddtoBasket,
+  addtoBasketTrue,
 } = basketSlice.actions;
 export default basketSlice.reducer;
