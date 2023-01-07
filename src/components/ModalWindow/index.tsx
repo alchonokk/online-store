@@ -12,7 +12,9 @@ function ModalWindow() {
   return (
     <>
       <Modal isShowing={isShowing} hide={toggle} setIsSubmit={setIsSubmit} />
-      <button onClick={toggle}>Buy now</button>
+      <button className="modal-button" onClick={toggle}>
+        Buy now
+      </button>
       {isSubmit && <OrdersWasMade />}
     </>
   );
