@@ -1,4 +1,3 @@
-
 function BasketPage() {
   return (
     <div>
