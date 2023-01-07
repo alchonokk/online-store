@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Links from "../../constants/Links";
-import ErrorPage from "../../pages/ErrorPage/ErrorPage";
+import ErrorPage from "../../pages/ErrorPage";
 import LayoutApp from "../LayoutApp/LayoutApp";
-import BasketPage from "../../pages/BasketPage/BasketPage";
-import DetailedPage from "../../pages/DetailedPage/DetailedPage";
-import MainPage from "../../pages/MainPage/MainPage";
+import BasketPage from "../../pages/BasketPage";
+import DetailedPage from "../../pages/DetailedPage";
+import MainPage from "../../pages/MainPage";
 
 function RoutesWrapper() {
   return (
