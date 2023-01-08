@@ -95,15 +95,26 @@
     margin-left: 0px;
     padding-bottom: 1rem;
     color: black;
+    text-align: start;
   }
 
   .cart-total {
     padding-left: 2rem;
+    display:flex;
+    flex-direction: column;
   }
 
   .modal-button {
     margin: 0 auto;
     margin-top: 2rem;
+  }
+
+  .cross-title {
+    text-decoration: line-through;
+  }
+
+  form {
+    padding-bottom: 1rem;
   }
 }
 
@@ -115,4 +126,40 @@
 
 .summary {
   display: flex;
+}
+
+@media (max-width: 760px) {
+  .basket-page{
+    .summary {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .basket_number-goods {
+      font-size: 1rem;
+    }
+
+    .modal-button {
+      width: 160px;
+    }
+  }
+}
+
+.discont__box_button {
+  width: 200px;
+  border: 2px solid rgba(187, 145, 105, 0.8);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.discont__box {
+  padding: 1.5rem;
+}
+
+.discont__box_total {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
 }
