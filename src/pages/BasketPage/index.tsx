@@ -38,7 +38,9 @@ function BasketPage() {
 
   return (
     <div className="page basket-page">
-      <h3 className="page__title">Products in cart </h3>
+      <h3 className="page__title" data-testid="basket-page">
+        Products in cart
+      </h3>
 
       {basketArr.map((item) => {
         return <CardBasket key={item.id} {...item}></CardBasket>;

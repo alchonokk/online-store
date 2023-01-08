@@ -18,7 +18,11 @@ type CardType = {
 const Card = ({ id, name, category, price, imgNumber, stock }: CardType) => {
   return (
     <div className="card">
-      <img src={createUrlForImage(imgNumber)} alt="Card img" />
+      <img
+        data-testid="cards-img"
+        src={createUrlForImage(imgNumber)}
+        alt="Card img"
+      />
       <div className="card-information">
         <h3 className="card-category">{category}</h3>
         <h3 className="card-name">{name}</h3>

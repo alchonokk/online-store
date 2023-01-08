@@ -19,7 +19,7 @@ const Modal = ({ isShowing, hide, setIsSubmit }: IValueToModal) =>
                 e.stopPropagation();
               }}
             >
-              <div>
+              <div data-testid="modal-form">
                 <Form hide={hide} setIsSubmit={setIsSubmit} />
               </div>
             </div>

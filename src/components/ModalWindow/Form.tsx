@@ -35,6 +35,7 @@ function Form({ hide, setIsSubmit }: IhiddenForm) {
       required: boolean;
       pattern: RegExp;
     },
+    dataTest: string,
     lengthField?: number
   ) {
     return lengthField ? (
@@ -43,12 +44,14 @@ function Form({ hide, setIsSubmit }: IhiddenForm) {
         placeholder={title}
         className="form__item"
         maxLength={lengthField}
+        data-testid={dataTest}
       />
     ) : (
       <input
         {...register(nameField, funcValid)}
         placeholder={title}
         className="form__item"
+        data-testid={dataTest}
       />
     );
   }
@@ -90,20 +93,37 @@ function Form({ hide, setIsSubmit }: IhiddenForm) {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form">
       <h3 className="form__title">Personal information:</h3>
-      {createInput("nameAndSurname", "Name and surname", nameRegExp())}
-      {errors.nameAndSurname && (
-        <p className="form__error">{Message.nameAndSurname}</p>
+      {createInput(
+        "nameAndSurname",
+        "Name and surname",
+        nameRegExp(),
+        "nameAndSurname"
       )}
-      {createInput("phone", "+ Phone number", phoneRegExp())}
-      {errors.phone && <p className="form__error">{Message.phone}</p>}
-      {createInput("address", "Delivery address", adressRegExp())}
+      {errors.nameAndSurname && (
+        <p data-testid="input-name-error" className="form__error">
+          {Message.nameAndSurname}
+        </p>
+      )}
+      {createInput("phone", "+ Phone number", phoneRegExp(), "phone")}
+      {errors.phone && (
+        <p data-testid="input-phone-error" className="form__error">
+          {Message.phone}
+        </p>
+      )}
+      {createInput("address", "Delivery address", adressRegExp(), "address")}
       {errors.address && <p className="form__error">{Message.address}</p>}
-      {createInput("mail", "E-mail", mailRegExp())}
+      {createInput("mail", "E-mail", mailRegExp(), "mail")}
       {errors.mail && <p className="form__error">{Message.mail}</p>}
       <h3 className="form__title">Entering bank card data:</h3>
       <label htmlFor="cardNumber">
         Card Number:
-        {createInput("cardNumber", "Enter 16 digits", cardNumberRegExp(), 16)}
+        {createInput(
+          "cardNumber",
+          "Enter 16 digits",
+          cardNumberRegExp(),
+          "cardNumber",
+          16
+        )}
         {errors.cardNumber && (
           <p className="form__error">{Message.cardNumber}</p>
         )}
@@ -114,15 +134,20 @@ function Form({ hide, setIsSubmit }: IhiddenForm) {
       </div>
       <label htmlFor="valid">
         VALID:
-        {createInput("valid", "MMYY", validRegExp(), 4)}
+        {createInput("valid", "MMYY", validRegExp(), "valid", 4)}
         {errors.valid && <p className="form__error">{Message.valid}</p>}
       </label>
       <label htmlFor="cvv">
         CVV:
-        {createInput("cvv", "Code", cvvRegExp(), 3)}
+        {createInput("cvv", "Code", cvvRegExp(), "cvv", 3)}
         {errors.cvv && <p className="form__error">{Message.cvv}</p>}
       </label>
-      <input type="submit" className="form__item" value={"Confirm"} />
+      <input
+        data-testid="submit-form"
+        type="submit"
+        className="form__item"
+        value={"Confirm"}
+      />
     </form>
   );
 }

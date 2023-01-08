@@ -15,7 +15,11 @@ function HeaderApp() {
           <span className="card-total__amount"> {CountSum()}</span>
           {DOLLAR_SYMBOL}
         </div>
-        <NavLink className="basket" to={Links.BASKET_PAGE}>
+        <NavLink
+          data-testid="basket-link"
+          className="basket"
+          to={Links.BASKET_PAGE}
+        >
           <span className="basket_number-goods">{ChangeProductsAmount()}</span>
         </NavLink>
       </header>

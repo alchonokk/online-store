@@ -4,7 +4,7 @@ import "./style.scss";
 
 function CardsBox() {
   return (
-    <section className="cards-box">
+    <section data-testid="cards-box" className="cards-box">
       {data.map((card) => {
         return <Card key={card.id} {...card}></Card>;
       })}
