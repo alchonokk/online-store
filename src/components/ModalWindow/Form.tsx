@@ -10,6 +10,8 @@ import {
   cvvRegExp,
 } from "./validation";
 import Message from "../../constants/ErrorMessage";
+import { useAppDispatch } from "../../app/hooks";
+import { clearBasket } from "../../reducer/basketReducer/basketslice";
 
 const DEFAULT_CLASSNAME_PAYSYSTEM = "form__card__payment-logo";
 const CLASSNAME_VISA_PAYSYSTEM = "form__card__payment-logo visa";
@@ -22,6 +24,8 @@ interface IhiddenForm {
 }
 
 function Form({ hide, setIsSubmit }: IhiddenForm) {
+  const dispatch = useAppDispatch();
+
   const {
     register,
     handleSubmit,
@@ -59,12 +63,8 @@ function Form({ hide, setIsSubmit }: IhiddenForm) {
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     hide();
-    console.log(data);
     setIsSubmit(true);
-    // alert(
-    //   "Заказ оформлен. TODO// Затем, спустя 3-5 секунд происходит редирект на главную страницу магазина.
-    //  Корзина при этом очищается"
-    // );
+    dispatch(clearBasket());
   };
 
   register("cardNumber", {

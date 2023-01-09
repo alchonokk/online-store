@@ -85,6 +85,7 @@ export const {
   findProductIndex,
   isAddtoBasket,
   addtoBasketTrue,
+  clearBasket,
   addDiscont,
   deleteDiscont,
 } = basketSlice.actions;

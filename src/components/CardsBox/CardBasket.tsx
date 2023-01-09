@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { createUrlForImage } from "../../helpers/createUrlForImage";
 import Links from "../../constants/Links";
 import { CartButton } from "../Common/ButtonCounterBox";
 import { IBasketArr } from "../../pages/BasketPage";
@@ -11,12 +10,12 @@ const CardBasket = ({
   category,
   price,
   stock,
-  imgNumber,
+  thumbnail,
   amount,
 }: IBasketArr) => {
   return (
     <div className="card-basket">
-      <img src={createUrlForImage(imgNumber)} alt="Card img" />
+      <img src={thumbnail} alt="Card img" />
       <div className="card-basket__information">
         <h3 className="card-basket__category">{category}</h3>
         <h3 className="card-basket__name">{name}</h3>
