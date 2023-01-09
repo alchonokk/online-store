@@ -273,7 +273,7 @@ export const data = [
   },
   {
     id: "12",
-    name: "Mango and coconut milk",
+    name: "Mango and coconut",
     price: "15",
     thumbnail:
       "https://static.tildacdn.com/stor6463-6561-4435-a264-393833306234/81181653.jpg",
