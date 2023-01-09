@@ -19,7 +19,7 @@ export interface IBasketArr {
 function BasketPage() {
   const basketArr: IBasketArr[] = [];
   const cartProducts = useAppSelector((state) => state.basket.basketProducts);
-  cartProducts.map((product) => {
+  cartProducts.map((product: IBasketArr) => {
     const toggleProduct = data.find((item) => item.id === product.id);
     if (toggleProduct) {
       basketArr.push({
