@@ -1,19 +1,9 @@
 import React from "react";
-
-import HeaderApp from "./components/HeaderApp";
-import CardsBox from "./components/CardsBox";
-import FooterApp from "./components/FooterApp";
-
+import RoutesWrapper from "./components/RoutesWrapper/RoutesWrapper";
 import "./style.css";
 
 function App() {
-  return (
-    <>
-      <HeaderApp />
-      <CardsBox />
-      <FooterApp />
-    </>
-  );
+  return <RoutesWrapper />;
 }
 
 export default App;
