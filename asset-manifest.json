@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/online-store/static/css/main.c81efe3c.css",
-    "main.js": "/online-store/static/js/main.523a92f5.js",
-    "static/media/masterCard.svg": "/online-store/static/media/masterCard.74acfd255667b60a1155.svg",
-    "static/media/Visa.svg": "/online-store/static/media/Visa.89e6123c5b56fb4c1e69.svg",
-    "static/media/unionpay.svg": "/online-store/static/media/unionpay.f26b62a34b5a48bcebfc.svg",
-    "static/media/LOGO.svg": "/online-store/static/media/LOGO.731c0d4aa43bbb136a37.svg",
-    "static/media/rssLogo.svg": "/online-store/static/media/rssLogo.66e800aacc5aaf68c358.svg",
-    "static/media/github.svg": "/online-store/static/media/github.bea7512054f79a0e0e00.svg",
-    "static/media/bag2.svg": "/online-store/static/media/bag2.3470268c3dceaa3e7dc0.svg",
+    "main.css": "/online-store/static/css/main.b1dd90a6.css",
+    "main.js": "/online-store/static/js/main.59826afa.js",
+    "static/media/masterCard.svg": "/online-store/static/media/masterCard.99c8c5dddcdc794a9b62.svg",
+    "static/media/Visa.svg": "/online-store/static/media/Visa.8105c6809af1d5e745f0.svg",
+    "static/media/unionpay.svg": "/online-store/static/media/unionpay.6171d5b61e41fd15eeef.svg",
+    "static/media/LOGO.svg": "/online-store/static/media/LOGO.7d3eb8252c5beb058471.svg",
+    "static/media/rssLogo.svg": "/online-store/static/media/rssLogo.2418248d4ccd4e7738a4.svg",
+    "static/media/github.svg": "/online-store/static/media/github.cadab172d77dc4de24c0.svg",
+    "static/media/bag2.svg": "/online-store/static/media/bag2.81a1acb200ee002e9cb9.svg",
     "index.html": "/online-store/index.html",
-    "main.c81efe3c.css.map": "/online-store/static/css/main.c81efe3c.css.map",
-    "main.523a92f5.js.map": "/online-store/static/js/main.523a92f5.js.map"
+    "main.b1dd90a6.css.map": "/online-store/static/css/main.b1dd90a6.css.map",
+    "main.59826afa.js.map": "/online-store/static/js/main.59826afa.js.map"
   },
   "entrypoints": [
-    "static/css/main.c81efe3c.css",
-    "static/js/main.523a92f5.js"
+    "static/css/main.b1dd90a6.css",
+    "static/js/main.59826afa.js"
   ]
 }
