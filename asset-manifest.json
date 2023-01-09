@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-store/static/css/main.3268af22.css",
-    "main.js": "/online-store/static/js/main.2ffd6b5a.js",
+    "main.css": "/online-store/static/css/main.c81efe3c.css",
+    "main.js": "/online-store/static/js/main.596a3300.js",
     "static/media/masterCard.svg": "/online-store/static/media/masterCard.74acfd255667b60a1155.svg",
     "static/media/Visa.svg": "/online-store/static/media/Visa.89e6123c5b56fb4c1e69.svg",
     "static/media/unionpay.svg": "/online-store/static/media/unionpay.f26b62a34b5a48bcebfc.svg",
@@ -10,11 +10,11 @@
     "static/media/github.svg": "/online-store/static/media/github.bea7512054f79a0e0e00.svg",
     "static/media/bag2.svg": "/online-store/static/media/bag2.3470268c3dceaa3e7dc0.svg",
     "index.html": "/online-store/index.html",
-    "main.3268af22.css.map": "/online-store/static/css/main.3268af22.css.map",
-    "main.2ffd6b5a.js.map": "/online-store/static/js/main.2ffd6b5a.js.map"
+    "main.c81efe3c.css.map": "/online-store/static/css/main.c81efe3c.css.map",
+    "main.596a3300.js.map": "/online-store/static/js/main.596a3300.js.map"
   },
   "entrypoints": [
-    "static/css/main.3268af22.css",
-    "static/js/main.2ffd6b5a.js"
+    "static/css/main.c81efe3c.css",
+    "static/js/main.596a3300.js"
   ]
 }
