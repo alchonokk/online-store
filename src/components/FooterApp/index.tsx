@@ -2,7 +2,7 @@ import Links from "../../constants/Links";
 import MemberTag from "./MemberTag";
 import "./style.scss";
 
-function FooterApp() {
+const FooterApp = () => {
   return (
     <>
       <footer>
@@ -22,6 +22,6 @@ function FooterApp() {
       </footer>
     </>
   );
-}
+};
 
 export default FooterApp;

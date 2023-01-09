@@ -1,18 +1,12 @@
-body {
-  background-color: #f7f4ec;
-  margin: 0;
-}
-
 footer {
-  position: fixed;
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 5rem;
-  margin: 0, auto;
-  padding: 0, 20px;
   width: 100%;
   bottom: 0;
+  left: 0;
   background-color: #bb9169;
   color: white;
 }

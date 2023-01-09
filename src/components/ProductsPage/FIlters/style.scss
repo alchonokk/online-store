@@ -1,0 +1,43 @@
+.filters-container {
+  min-width: 270px;
+  .btn {
+    width: 200px;
+    height: 40px;
+    background-color: #f7f4ec;
+    border: 2px solid #bb9169;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #070707;
+  }
+}
+
+.filter-list {
+  margin-bottom: 20px;
+}
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+
+.num-filter {
+  .inputs-filter {
+    display: flex;
+    align-items: center;
+  }
+  input {
+    width: 30%;
+  }
+  .num-line {
+    border-top: 1px solid #000;
+    width: 5%;
+    margin: 5px;
+  }
+}

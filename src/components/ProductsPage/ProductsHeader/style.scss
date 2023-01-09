@@ -1,0 +1,32 @@
+.product-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+  .line {
+    border-top: 1px solid #000;
+    justify-items: start;
+    width: 150px;
+  }
+}
+
+.square-container {
+  display: flex;
+  gap: 20px;
+}
+.square-four {
+  background: url(../../../assets/square-four.png);
+  width: 40px;
+  height: 40px;
+}
+
+.square-six {
+  background: url(../../../assets/square-six.png);
+  width: 40px;
+  height: 40px;
+}

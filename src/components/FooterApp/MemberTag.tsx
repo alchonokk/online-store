@@ -3,7 +3,7 @@ interface TeamMember {
   name: string;
 }
 
-function MemberTag({ gitHubProfile, name }: TeamMember) {
+const MemberTag = ({ gitHubProfile, name }: TeamMember) => {
   return (
     <a
       className="git-link"
@@ -16,6 +16,6 @@ function MemberTag({ gitHubProfile, name }: TeamMember) {
       <span className="user-name">{name}</span>
     </a>
   );
-}
+};
 
 export default MemberTag;

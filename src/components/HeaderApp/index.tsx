@@ -6,7 +6,7 @@ const DEFAULT_AMOUNT = 0;
 const DEFAULT_NUM_GOODS = 0;
 const DOLLAR_SYMBOL = "$";
 
-function HeaderApp() {
+const HeaderApp = () => {
   return (
     <>
       <header className="header">
@@ -22,6 +22,6 @@ function HeaderApp() {
       </header>
     </>
   );
-}
+};
 
 export default HeaderApp;
