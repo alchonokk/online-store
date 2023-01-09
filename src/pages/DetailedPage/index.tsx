@@ -5,7 +5,7 @@ import ModalWindow from "../../components/ModalWindow";
 import "./style.scss";
 import { CartButton } from "../../components/Common/ButtonCounterBox";
 
-const SEPARATOR = " > ";
+export const SEPARATOR = " > ";
 
 function DetailedPage() {
   const { id } = useParams();
