@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a32f9ded.css",
+    "main.js": "/static/js/main.2ffd6b5a.js",
+    "static/media/masterCard.svg": "/static/media/masterCard.74acfd255667b60a1155.svg",
+    "static/media/Visa.svg": "/static/media/Visa.89e6123c5b56fb4c1e69.svg",
+    "static/media/unionpay.svg": "/static/media/unionpay.f26b62a34b5a48bcebfc.svg",
+    "static/media/LOGO.svg": "/static/media/LOGO.731c0d4aa43bbb136a37.svg",
+    "static/media/rssLogo.svg": "/static/media/rssLogo.66e800aacc5aaf68c358.svg",
+    "static/media/github.svg": "/static/media/github.bea7512054f79a0e0e00.svg",
+    "static/media/bag2.svg": "/static/media/bag2.3470268c3dceaa3e7dc0.svg",
+    "index.html": "/index.html",
+    "main.a32f9ded.css.map": "/static/css/main.a32f9ded.css.map",
+    "main.2ffd6b5a.js.map": "/static/js/main.2ffd6b5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a32f9ded.css",
+    "static/js/main.2ffd6b5a.js"
+  ]
+}
