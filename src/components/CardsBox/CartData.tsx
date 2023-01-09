@@ -138,9 +138,9 @@ export const data = [
     brand: "SOUL HYGGLE",
     category: "Diffusers",
     images: [
-      "https://static.tildacdn.com/tild3436-3733-4263-b131-623764346232/C74D7685-F0DA-4E91-9.jpeg",
-      "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.2885-15/269130076_620155672653607_926547587651298553_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fpoz5-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=8BjR3ZgCnPQAX90USxq&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjczMjE0NTMzMTY0MDYzNzM1MQ%3D%3D.2-ccb7-5&oh=00_AfAy6mvx-Q5SyAWq8DxHNtXcK_qX8RcBwo-ArRL1dpadtg&oe=63BF49DE&_nc_sid=30a2ef",
-      "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.2885-15/131888749_431537788008352_3708046996344744150_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fpoz5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=-f7n21OYDhYAX_pK47v&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjQ2Njk0Njk4NjAxNDY2NzM1OA%3D%3D.2-ccb7-5&oh=00_AfDomM-QruVsVgJDt6ll-7K5gSNCNLShRx85S7Ae32PcgA&oe=63BE9CE9&_nc_sid=30a2ef",
+      "https://static.tildacdn.com/stor6533-3861-4465-b834-313064373461/16160084.jpg",
+      "https://static.tildacdn.com/tild3461-6265-4637-a331-393335366138/AC9E1FC9-7809-4236-B.jpeg",
+      "https://static.tildacdn.com/tild6437-6565-4632-b930-353262353861/E3FA32F7-C66E-443F-A.jpeg",
     ],
     description:
       "A fresh mix of exceptionally green notes of resinous rosemary and spicy rosemary combined with the aroma of lush dough. This fragrance will remind you of eternal summer and set you up for endless conversations in the kitchen.",
@@ -161,9 +161,9 @@ export const data = [
     brand: "SOUL HYGGLE",
     category: "Diffusers",
     images: [
-      "https://static.tildacdn.com/tild6437-6565-4632-b930-353262353861/E3FA32F7-C66E-443F-A.jpeg",
-      "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.2885-15/121654109_133366851457755_2254114655808946732_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fpoz5-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=PSnkN-CMEoAAX-t6F3V&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjQyMTk3OTA5OTI5MDM3MDI1Nw%3D%3D.2-ccb7-5&oh=00_AfCkjQmAx_8Yef7PY7YHQ488XP6gj_2ovpWiL-1THlur5Q&oe=63BF70D9&_nc_sid=30a2ef",
-      "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.2885-15/269130076_620155672653607_926547587651298553_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fpoz5-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=8BjR3ZgCnPQAX90USxq&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjczMjE0NTMzMTY0MDYzNzM1MQ%3D%3D.2-ccb7-5&oh=00_AfAy6mvx-Q5SyAWq8DxHNtXcK_qX8RcBwo-ArRL1dpadtg&oe=63BF49DE&_nc_sid=30a2ef",
+      "https://static.tildacdn.com/tild3963-6330-4161-b863-316465613335/_61.jpg",
+      "https://static.tildacdn.com/tild3436-3733-4263-b131-623764346232/C74D7685-F0DA-4E91-9.jpeg",
+      "https://static.tildacdn.com/tild3365-3965-4136-b062-356138346435/attachment_46.jpeg",
     ],
     description:
       "It smells like spring air after the rain. It gathers the freshness of the first lilies of the valley and the astringency of meadow herbs. This is a childhood memory in which you run through the forest and pick the first flowers. Dew gently rolls from the stems to your palm. Pure and transparent aroma of a bouquet of violets and freesia. Soothing, slowing down and light.",
@@ -184,9 +184,9 @@ export const data = [
     brand: "SOUL HYGGLE",
     category: "Diffusers",
     images: [
+      "https://static.tildacdn.com/tild6437-6565-4632-b930-353262353861/E3FA32F7-C66E-443F-A.jpeg",
       "https://static.tildacdn.com/tild3461-6265-4637-a331-393335366138/AC9E1FC9-7809-4236-B.jpeg",
-      "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.2885-15/83485623_481294639219920_4246113296842590361_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fpoz5-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=OzjmDOu4VYIAX9MJWuI&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjI0MDE3MDE5NjMwMzg4MDY2Mg%3D%3D.2-ccb7-5&oh=00_AfB54b4QoA9sc7-3KH3DRMneIUoYCShhq94deLu7Xbad8g&oe=63BF3378&_nc_sid=30a2ef",
-      "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.2885-15/269130076_620155672653607_926547587651298553_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fpoz5-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=8BjR3ZgCnPQAX90USxq&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjczMjE0NTMzMTY0MDYzNzM1MQ%3D%3D.2-ccb7-5&oh=00_AfAy6mvx-Q5SyAWq8DxHNtXcK_qX8RcBwo-ArRL1dpadtg&oe=63BF49DE&_nc_sid=30a2ef",
+      "https://static.tildacdn.com/tild3436-3733-4263-b131-623764346232/C74D7685-F0DA-4E91-9.jpeg",
     ],
     description:
       "The scent of deep and true love. Confidence in your actions and words. Support, care, tenderness, sincerity, respect - all this is modern love. \nNoble notes of oud wood with a characteristic deep balsamic sound. The delicate heart of the composition is represented by delicate rose petals that open at the peak of their velvety and depth. They are framed by notes of cashmere, peony and cocoa.",
@@ -207,7 +207,9 @@ export const data = [
     brand: "SOUL HYGGLE",
     category: "Diffusers",
     images: [
-      "https://static.tildacdn.com/tild3538-3462-4963-b766-393365313861/5F7FE4F2-DC56-43FE-9.jpeg",
+      "https://static.tildacdn.com/stor6533-3861-4465-b834-313064373461/16160084.jpg",
+      "https://static.tildacdn.com/tild3963-6330-4161-b863-316465613335/_61.jpg",
+      "https://static.tildacdn.com/tild6437-6565-4632-b930-353262353861/E3FA32F7-C66E-443F-A.jpeg",
     ],
     description:
       "The atmosphere of a leisurely breakfast on the balcony or backyard. Starting the morning with pink sparkling is like allowing yourself to live luxuriously.\nThe bubbles slowly rise up, everything around is filled with the aroma of sparkling grapefruit, as if you had just broken off a slice of it. A fresh breeze blows you, bringing with it the smell of blackcurrant leaves and peaches. You are immersed in the memories of warm summer days in the country, when you picked blackcurrants for tea or jam.",
