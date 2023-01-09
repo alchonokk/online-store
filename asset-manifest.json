@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/online-store/static/css/main.c81efe3c.css",
-    "main.js": "/online-store/static/js/main.098da6e7.js",
+    "main.js": "/online-store/static/js/main.e79b94a6.js",
     "static/media/masterCard.svg": "/online-store/static/media/masterCard.74acfd255667b60a1155.svg",
     "static/media/Visa.svg": "/online-store/static/media/Visa.89e6123c5b56fb4c1e69.svg",
     "static/media/unionpay.svg": "/online-store/static/media/unionpay.f26b62a34b5a48bcebfc.svg",
@@ -11,10 +11,10 @@
     "static/media/bag2.svg": "/online-store/static/media/bag2.3470268c3dceaa3e7dc0.svg",
     "index.html": "/online-store/index.html",
     "main.c81efe3c.css.map": "/online-store/static/css/main.c81efe3c.css.map",
-    "main.098da6e7.js.map": "/online-store/static/js/main.098da6e7.js.map"
+    "main.e79b94a6.js.map": "/online-store/static/js/main.e79b94a6.js.map"
   },
   "entrypoints": [
     "static/css/main.c81efe3c.css",
-    "static/js/main.098da6e7.js"
+    "static/js/main.e79b94a6.js"
   ]
 }
