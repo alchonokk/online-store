@@ -24,7 +24,7 @@ function DetailedPage() {
 
   return (
     <div className="page description-page">
-      <h3 className="description-page__title">Product description {id} </h3>
+      <h3 className="description-page__title">Product description </h3>
       <div className="description-page__bread-crumbs">
         <NavLink to="/" className="bread-crumbs__catalog">
           Store Catalog
