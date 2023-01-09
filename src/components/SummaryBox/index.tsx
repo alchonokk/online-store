@@ -1,38 +1,38 @@
 import { useState } from "react";
 import { ChangeProductsAmount, CountSum } from "../Common/counterProducts";
 import { SEPARATOR } from "../../pages/DetailedPage";
-import { useAppSelector } from "../../app/hooks";
-import { useAppDispatch } from "../../app/hooks";
-import {
-  addDiscont,
-  deleteDiscont,
-} from "../../reducer/basketReducer/basketslice";
 import cx from "classnames";
 
-function SummaryBox() {
-  const dispatch = useAppDispatch();
+const PERCENT_DISCONT = 10;
 
+function SummaryBox() {
   const [isDisable, setIsDisable] = useState<boolean>(true);
   const [isRS, setRS] = useState<boolean>(false);
   const [is2023, set2023] = useState<boolean>(false);
   const [isRSSubmit, setRSSubmit] = useState<boolean>(false);
   const [is2023Submit, set2023Submit] = useState<boolean>(false);
+  const [numDiscont, setNumDiscont] = useState(0);
 
-  const cartDiscont = useAppSelector((state) => state.basket.discont);
-  const discontPrice = CountSum() * (1 - cartDiscont / 100);
+  const handleIncrementDiscont = (count: number) => {
+    setNumDiscont(count + PERCENT_DISCONT);
+  };
+
+  const handleDecrementDiscont = (count: number) => {
+    count <= 1 ? setNumDiscont(0) : setNumDiscont(count - PERCENT_DISCONT);
+  };
+
+  const discontPrice = CountSum() * (1 - numDiscont / 100);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    // setSearchData(e.target.value);
     const target = e.target;
-    if (target.value === "RS" && !isRS) {
+    if (target.value === "RS" && !isRS && !isRSSubmit) {
       setIsDisable(false);
       setRS(true);
     }
-    if (target.value === "2023" && !is2023) {
+    if (target.value === "2023" && !is2023 && !is2023Submit) {
       setIsDisable(false);
       set2023(true);
     }
-    console.log(target.value);
   };
 
   const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
@@ -40,24 +40,24 @@ function SummaryBox() {
     setIsDisable(true);
     e.target.reset();
     if (isRS) {
-      dispatch(addDiscont(10));
+      handleIncrementDiscont(numDiscont);
       setRSSubmit(true);
       setRS(false);
     }
     if (is2023) {
-      dispatch(addDiscont(10));
+      handleIncrementDiscont(numDiscont);
       set2023Submit(true);
       set2023(false);
     }
   };
 
   const handleDeleteDiscontRS = () => {
-    dispatch(deleteDiscont(10));
+    handleDecrementDiscont(numDiscont);
     setRSSubmit(false);
   };
 
   const handleDeleteDiscont2023 = () => {
-    dispatch(deleteDiscont(10));
+    handleDecrementDiscont(numDiscont);
     set2023Submit(false);
   };
 

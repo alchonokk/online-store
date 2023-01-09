@@ -12,7 +12,6 @@ export interface IBasketState {
   productIndex: number;
   isAdd: boolean;
   isAddAmount: number;
-  discont: number;
 }
 
 const initialState: IBasketState = {
@@ -20,7 +19,6 @@ const initialState: IBasketState = {
   productIndex: NaN,
   isAdd: false,
   isAddAmount: 0,
-  discont: 0,
 };
 
 export const basketSlice = createSlice({
@@ -69,12 +67,6 @@ export const basketSlice = createSlice({
     addtoBasketTrue(state, action: PayloadAction<boolean>) {
       state.isAdd = action.payload;
     },
-    addDiscont(state, action: PayloadAction<number>) {
-      state.discont = state.discont + action.payload;
-    },
-    deleteDiscont(state, action: PayloadAction<number>) {
-      state.discont = state.discont - action.payload;
-    },
   },
 });
 
@@ -86,7 +78,5 @@ export const {
   isAddtoBasket,
   addtoBasketTrue,
   clearBasket,
-  addDiscont,
-  deleteDiscont,
 } = basketSlice.actions;
 export default basketSlice.reducer;
