@@ -12,7 +12,7 @@ export interface IBasketArr {
   category: string;
   price: string;
   stock: string;
-  imgNumber: string;
+  thumbnail: string;
   amount: number;
 }
 
@@ -29,7 +29,7 @@ function BasketPage() {
         category: toggleProduct.category,
         price: toggleProduct.price,
         stock: toggleProduct.stock,
-        imgNumber: toggleProduct.imgNumber,
+        thumbnail: toggleProduct.thumbnail,
         amount: product.amount,
       });
     }

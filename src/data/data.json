@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "title": "HOT BREAD",
+      "name": "HOT BREAD",
       "price": 40,
       "thumbnail": "https://static.tildacdn.com/tild3938-3130-4935-b163-343137653639/HOT_BREAD2.jpeg",
       "brand": "SOUL HYGGLE",
@@ -25,7 +25,7 @@
     },
     {
       "id": 2,
-      "title": "BY THE FIRE",
+      "name": "BY THE FIRE",
       "price": 40,
       "thumbnail": "https://static.tildacdn.com/tild3033-3039-4464-a264-353839633435/By_The_fire2.JPG",
       "brand": "SOUL HYGGLE",
@@ -48,7 +48,7 @@
     },
     {
       "id": 3,
-      "title": "BY THE FIRE",
+      "name": "BY THE FIRE",
       "price": 40,
       "thumbnail": "https://static.tildacdn.com/tild3937-6663-4133-a535-643831396235/BALI.JPG",
       "brand": "SOUL HYGGLE",
@@ -71,7 +71,7 @@
     },
     {
       "id": 4,
-      "title": "CHAMPAGNE ROSÉ",
+      "name": "CHAMPAGNE ROSÉ",
       "price": 45,
       "thumbnail": "https://static.tildacdn.com/tild3635-3561-4833-b364-326437326461/Champagne_rose.JPEG",
       "brand": "SOUL HYGGLE",
@@ -94,7 +94,7 @@
     },
     {
       "id": 5,
-      "title": "FREESIA",
+      "name": "FREESIA",
       "price": 45,
       "thumbnail": "https://static.tildacdn.com/tild3935-6130-4635-b038-313835313238/Freesia3.JPG",
       "brand": "SOUL HYGGLE",
@@ -117,7 +117,7 @@
     },
     {
       "id": 6,
-      "title": "FOCACCIA ROSMARINO",
+      "name": "FOCACCIA ROSMARINO",
       "price": 25,
       "thumbnail": "https://static.tildacdn.com/tild3436-3733-4263-b131-623764346232/C74D7685-F0DA-4E91-9.jpeg",
       "brand": "SOUL HYGGLE",
@@ -137,7 +137,7 @@
     },
     {
       "id": 7,
-      "title": "FREESIA",
+      "name": "FREESIA",
       "price": 25,
       "thumbnail": "https://static.tildacdn.com/tild6437-6565-4632-b930-353262353861/E3FA32F7-C66E-443F-A.jpeg",
       "brand": "SOUL HYGGLE",
@@ -157,7 +157,7 @@
     },
     {
       "id": 8,
-      "title": "J'AIME",
+      "name": "J'AIME",
       "price": 25,
       "thumbnail": "https://static.tildacdn.com/tild3461-6265-4637-a331-393335366138/AC9E1FC9-7809-4236-B.jpeg",
       "brand": "SOUL HYGGLE",
@@ -177,7 +177,7 @@
     },
     {
       "id": 9,
-      "title": "CHAMPAGNE ROSÉ",
+      "name": "CHAMPAGNE ROSÉ",
       "price": 25,
       "thumbnail": "https://static.tildacdn.com/tild3538-3462-4963-b766-393365313861/5F7FE4F2-DC56-43FE-9.jpeg",
       "brand": "SOUL HYGGLE",
@@ -197,7 +197,7 @@
     },
     {
       "id": 10,
-      "title": "Lavender",
+      "name": "Lavender",
       "price": 15,
       "thumbnail": "https://static.tildacdn.com/tild6438-3962-4238-a163-646366393766/5BC344B6-AD82-4F85-A.jpeg",
       "brand": "Estetic",
@@ -219,7 +219,7 @@
     },
     {
       "id": 11,
-      "title": "Alpine flowers",
+      "name": "Alpine flowers",
       "price": 15,
       "thumbnail": "https://static.tildacdn.com/stor6138-6562-4339-a666-363035636635/97553355.jpg",
       "brand": "Estetic",
@@ -241,7 +241,7 @@
     },
     {
       "id": 12,
-      "title": "Mango and coconut milk",
+      "name": "Mango and coconut milk",
       "price": 15,
       "thumbnail": "https://static.tildacdn.com/stor6463-6561-4435-a264-393833306234/81181653.jpg",
       "brand": "Estetic",
@@ -263,7 +263,7 @@
     },
     {
       "id": 13,
-      "title": "Coka-cola",
+      "name": "Coka-cola",
       "price": 15,
       "thumbnail": "https://static.tildacdn.com/stor3939-3261-4431-a135-336539356631/48763390.jpg",
       "brand": "Estetic",
@@ -285,7 +285,7 @@
     },
     {
       "id": 14,
-      "title": "Cashmere and plum",
+      "name": "Cashmere and plum",
       "price": 15,
       "thumbnail": "https://static.tildacdn.com/stor3030-3738-4161-b038-666462633332/50112996.jpg",
       "brand": "Estetic",
@@ -307,7 +307,7 @@
     },
     {
       "id": 15,
-      "title": "Sherlock Holmes",
+      "name": "Sherlock Holmes",
       "price": 15,
       "thumbnail": "https://static.tildacdn.com/tild6131-3336-4631-a235-396138356565/photo1636983985_1.jpeg",
       "brand": "Estetic",
@@ -329,7 +329,7 @@
     },
     {
       "id": 16,
-      "title": "Oak moss and amber",
+      "name": "Oak moss and amber",
       "price": 40,
       "thumbnail": "https://static.tildacdn.com/tild6433-6362-4332-a164-326665393565/attachment_45.jpeg",
       "brand": "Estetic",
@@ -345,7 +345,7 @@
     },
     {
       "id": 17,
-      "title": "Sherlock Holmes",
+      "name": "Sherlock Holmes",
       "price": 27,
       "thumbnail": "https://static.tildacdn.com/tild3033-6431-4134-b164-363236633330/attachment_47.jpeg",
       "brand": "Estetic",
@@ -361,7 +361,7 @@
     },
     {
       "id": 18,
-      "title": "Sherlock Holmes",
+      "name": "Sherlock Holmes",
       "price": 15,
       "thumbnail": "https://static.tildacdn.com/stor3234-3530-4161-b435-663233313636/90643784.jpg",
       "brand": "Estetic",
@@ -377,7 +377,7 @@
     },
     {
       "id": 19,
-      "title": "Green Soul",
+      "name": "Green Soul",
       "price": 20,
       "thumbnail": "https://static.tildacdn.com/tild3137-6530-4764-b735-343138623161/0481A033-4769-4FD9-B.jpeg",
       "brand": "Estetic",
@@ -400,7 +400,7 @@
     },
     {
       "id": 20,
-      "title": "Dark Mood",
+      "name": "Dark Mood",
       "price": 20,
       "thumbnail": "https://static.tildacdn.com/tild6236-6532-4132-b733-366162343939/49236491-6175-41D7-B.jpeg",
       "brand": "Estetic",
