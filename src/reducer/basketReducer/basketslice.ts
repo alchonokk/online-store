@@ -77,5 +77,6 @@ export const {
   findProductIndex,
   isAddtoBasket,
   addtoBasketTrue,
+  clearBasket,
 } = basketSlice.actions;
 export default basketSlice.reducer;
