@@ -53,7 +53,7 @@ export const data = [
   },
   {
     id: "3",
-    name: "BY THE FIRE",
+    name: "FIRES",
     price: "40",
     thumbnail:
       "https://static.tildacdn.com/tild3937-6663-4133-a535-643831396235/BALI.JPG",
