@@ -1,13 +1,13 @@
 import React from "react";
 import Modal from "./Modal";
 import ShowModal from "./showModal";
-import { useState } from "react";
 import "./style.scss";
-import OrdersWasMade from "../OrdersWasMade";
+export type Submit = {
+  setIsSubmit: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-function ModalWindow() {
+function ModalWindow({ setIsSubmit }: Submit) {
   const { isShowing, toggle } = ShowModal();
-  const [isSubmit, setIsSubmit] = useState(false);
 
   return (
     <>
@@ -15,7 +15,6 @@ function ModalWindow() {
       <button className="modal-button" onClick={toggle}>
         Buy now
       </button>
-      {isSubmit && <OrdersWasMade />}
     </>
   );
 }
