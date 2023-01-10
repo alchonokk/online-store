@@ -4,6 +4,8 @@ import { CardBasket } from "../../components/CardsBox/CardBasket";
 import ModalWindow from "../../components/ModalWindow";
 import "./style.scss";
 import SummaryBox from "../../components/SummaryBox";
+import { useState } from "react";
+import OrdersWasMade from "../../components/OrdersWasMade";
 
 export interface IBasketArr {
   id: string;
@@ -17,6 +19,7 @@ export interface IBasketArr {
 }
 
 function BasketPage() {
+  const [isSubmit, setIsSubmit] = useState(false);
   const basketArr: IBasketArr[] = [];
   const cartProducts = useAppSelector((state) => state.basket.basketProducts);
   cartProducts.map((product) => {
@@ -43,11 +46,18 @@ function BasketPage() {
       {basketArr.map((item) => {
         return <CardBasket key={item.id} {...item}></CardBasket>;
       })}
-      <div className="line"></div>
-      <div className="summary">
-        <SummaryBox />
-      </div>
-      <ModalWindow />
+      {basketArr.length ? (
+        <div>
+          <div className="line"></div>
+          <div className="summary">
+            <SummaryBox />
+          </div>
+          <ModalWindow setIsSubmit={setIsSubmit} />
+        </div>
+      ) : (
+        !isSubmit && <h2>Cart is Empty</h2>
+      )}
+      {isSubmit && <OrdersWasMade />}
     </div>
   );
 }

@@ -1,14 +1,19 @@
 import { useParams, NavLink } from "react-router-dom";
 import { data } from "../../components/CardsBox/CartData";
-import ModalWindow from "../../components/ModalWindow";
-
 import "./style.scss";
 import { CartButton } from "../../components/Common/ButtonCounterBox";
+import Links from "../../constants/Links";
+import { useNavigate } from "react-router-dom";
+import { useAppSelector } from "../../app/hooks";
+import { useAppDispatch } from "../../app/hooks";
+import { addProduct } from "../../reducer/basketReducer/basketslice";
 
 export const SEPARATOR = " > ";
 
 function DetailedPage() {
   const { id } = useParams();
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const dataIndex = data.findIndex((product) => product.id === id);
   const {
@@ -22,11 +27,22 @@ function DetailedPage() {
     images,
   } = data[dataIndex];
 
+  const cartProducts = useAppSelector((state) => state.basket.basketProducts);
+  function moveToBasket(id: string, price: string) {
+    const toggleProduct = cartProducts.find((product) => product.id === id);
+    if (toggleProduct) {
+      navigate(Links.BASKET_PAGE);
+    } else {
+      dispatch(addProduct({ id, amount: 1, price: Number(price) }));
+      navigate(Links.BASKET_PAGE);
+    }
+  }
+
   return (
     <div className="page description-page">
       <h3 className="description-page__title">Product description </h3>
       <div className="description-page__bread-crumbs">
-        <NavLink to="/" className="bread-crumbs__catalog">
+        <NavLink to={Links.MAIN_PAGE} className="bread-crumbs__catalog">
           Store Catalog
         </NavLink>
         {SEPARATOR}
@@ -55,7 +71,14 @@ function DetailedPage() {
         <div className="description-page__box_price-amount">
           <p>Price: {price} $</p>
           <p>Stock: {stock}</p>
-          <ModalWindow />
+          {id && (
+            <button
+              className="modal-button"
+              onClick={() => moveToBasket(id, price)}
+            >
+              Buy now
+            </button>
+          )}
           {id && <CartButton id={id} price={price} stock={stock} />}
         </div>
       </div>
