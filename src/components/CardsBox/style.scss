@@ -1,12 +1,9 @@
 .cards-box {
-  width: 90vw;
   margin: 3rem auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  gap: 2.5rem;
-  margin-bottom: 6rem;
 }
 
 .card {
@@ -16,6 +13,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card img {
@@ -51,7 +49,7 @@
 }
 
 .add-to-cart {
-  margin-top: 22px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,15 @@
+.products {
+  margin-top: 50px;
+  margin-bottom: 5rem;
+  margin: 50px 10px 5rem;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .divide-line {
+    border-right: 1px solid #000;
+    margin-top: 20px;
+  }
+}
