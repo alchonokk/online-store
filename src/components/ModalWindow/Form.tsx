@@ -1,5 +1,5 @@
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   nameRegExp,
   phoneRegExp,
@@ -32,6 +32,10 @@ function Form({ hide, setIsSubmit }: IhiddenForm) {
     formState: { errors },
   } = useForm({ mode: "onBlur" });
 
+  const handleOnInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.target.value = e.target.value.replace(/[^\d]/g, "");
+  };
+
   function createInput(
     nameField: string,
     title: string,
@@ -47,6 +51,8 @@ function Form({ hide, setIsSubmit }: IhiddenForm) {
         placeholder={title}
         className="form__item"
         maxLength={lengthField}
+        onInput={handleOnInput}
+        type="text"
       />
     ) : (
       <input
