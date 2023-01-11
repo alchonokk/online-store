@@ -25,7 +25,7 @@ const Card = ({ id, name, category, price, thumbnail, stock }: CardType) => {
           More detailed
         </Link>
       </div>
-      {<CartButton id={id} price={price} stock={stock} />}
+      <CartButton id={id} price={price} stock={stock} />
     </div>
   );
 };
